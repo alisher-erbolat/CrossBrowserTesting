@@ -24,7 +24,7 @@ public class CrossBrowserTesting {
         }
 
 
-        driver.manage().window().maximize();
+        driver.man().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://demo.guru99.com/v4");
     }
