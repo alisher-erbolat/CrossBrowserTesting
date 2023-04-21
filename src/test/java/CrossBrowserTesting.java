@@ -14,7 +14,7 @@ public class CrossBrowserTesting {
 
     @Test()
     @Parameters({"browserName"})
-    public void createCustomer(String browserName){
+    public void createCustomer(@Optional("Chrome") String browserName){
 
         if (browserName.equals("Chrome")){
             driver = new ChromeDriver();
